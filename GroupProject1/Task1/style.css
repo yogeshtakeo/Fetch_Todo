@@ -1,0 +1,33 @@
+
+* background: pink
+  {
+    box-sizing: border-box;
+  }
+   
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-: pink;
+    font-size: 40px;
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-size: 40px;
+  }
+  h2 {
+    text-align: left;
+    text-transform: uppercase;
+    color: purple;
+    font-size: 40px;
+  }
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-size: 60px;
+  }
+
+  
