@@ -1,0 +1,8 @@
+Topics Covered:
+
+API fetching
+
+Task
+Create a webpage that fetches data from the "https://jsonplaceholder.typicode.com/todos/" link using the Fetch API with async/await syntax. Display the results on the webpage using HTML and CSS, such that each todo item is shown as a list item. Use JavaScript to manipulate the DOM and insert the fetched data into the appropriate HTML elements.
+
+Additionally, implement a form on the webpage that allows users to add new todo items. When the user submits the form, use JavaScript to add the new item to the list of Todos displayed on the webpage without refreshing the page.

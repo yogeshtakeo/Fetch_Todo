@@ -1,0 +1,7 @@
+Topics:
+HTML CSS . JS DOM Manipulation , JS Fetching API
+
+Task:
+Create a webpage that fetches data from the https://api.punkapi.com/v2/beers/random link using the Fetch API with async/await syntax. Display the results on the webpage using HTML and CSS, such that each beer's name, tagline, and image are shown in separate elements. Use JavaScript to manipulate the DOM and insert the fetched data into the appropriate HTML elements.
+
+Additionally, implement a button on the webpage that, when clicked, fetches data for a new random beer and updates the displayed information without refreshing the page.
