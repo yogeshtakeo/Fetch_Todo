@@ -1,4 +1,11 @@
-const API_URL = "https://www.reddit.com/r/popular.json";
+
+  
+
+
+
+
+  const API_URL = "https://www.reddit.com/r/popular.json";
+
 async function fetchPosts() {
   try {
     const response = await fetch(API_URL);
@@ -36,6 +43,7 @@ function displayPosts(posts) {
     container.appendChild(postElement);
   });
 }
+
 function filterPosts(posts, query) {
   return posts.filter(
     (post) =>
@@ -43,6 +51,7 @@ function filterPosts(posts, query) {
       post.author.toLowerCase().includes(query.toLowerCase())
   );
 }
+
 async function init() {
   const allPosts = await fetchPosts();
   displayPosts(allPosts);
@@ -57,5 +66,4 @@ async function init() {
 }
 
 init();
-
   
