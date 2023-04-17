@@ -1,0 +1,41 @@
+body {
+  background-image: url("https://img.freepik.com/free-vector/condensation-water-beer-droplets-glass-yellow-background-rain-drops-window-abstract-wet-texture-cold-juice-champagne-alcohol-beverage-wineglass-realistic-3d-vector-illustration_107791-4571.jpg");
+  background-size: cover;
+}
+.image-container {
+  background-size: cover;
+}
+
+.image {
+  height: 480px;
+  width: 150px;
+  font-weight: 900;
+  margin: 5px;
+  padding: 5px;
+}
+h1,
+h2,
+h3 {
+  color: Blue;
+}
+.random {
+  background-color: blue;
+  color: white;
+
+  font-weight: bolder;
+}
+
+.display-box {
+  display: grid;
+  justify-content: center;
+
+  height: 50%;
+}
+.button-con {
+  display: grid;
+
+  width: 75%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+}

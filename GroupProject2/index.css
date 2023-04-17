@@ -1,0 +1,40 @@
+body {
+  background-image: url("https://images.pexels.com/photos/7130473/pexels-photo-7130473.jpeg");
+  background-size: cover;
+}
+h1,
+h2 {
+  color: Red;
+}
+.add-box {
+  color: Blue;
+  font-weight: bolder;
+}
+#add-task {
+  width: 40%;
+
+  padding: 5px;
+}
+#add {
+  background-color: blue;
+  color: White;
+  width: 42%;
+  padding: 5px;
+  border-radius: 10%;
+}
+.display-box {
+  background-image: url("https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhaW4lMjBiYWNrZ3JvdW5kc3xlbnwwfHwwfHw%3D&w=1000&q=80");
+  display: flexbox;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  background-color: rgb(196, 193, 161);
+}
+.display-box:hover {
+  background-image: url("https://cdn.wallpapersafari.com/27/7/5msKqr.jpg");
+  background-size: cover;
+  color: lightseagreen;
+}
