@@ -1,0 +1,9 @@
+Create a simple To-Do list application that allows users to add and remove items from a list.
+ Use React and the useState hook to manage the list state.
+
+The application should have an input field where users can enter a task and a button to add the task to the list.
+ The list should be displayed below the input field and should show each task as a separate item. Each task should have a button to remove it from the list.
+
+Additionally, add a counter to the application that displays the number of tasks currently on the list.
+
+Use CSS to style the application, making sure that it is easy to use and visually appealing.
