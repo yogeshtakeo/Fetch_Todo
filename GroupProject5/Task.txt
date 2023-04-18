@@ -1,0 +1,9 @@
+Create a simple shopping cart application using React and the useState hook.
+The application should have a list of products with their images, names, and prices. Each product should have a button that adds it to the shopping cart.
+
+The shopping cart should be displayed in a separate section of the application, and should show each item that has been added to the cart, along with its name, image, price, and quantity.
+Each item in the cart should have buttons to increase or decrease its quantity or remove it from the cart entirely.
+
+Additionally, add a counter to the application that displays the total number of items in the shopping cart and a total cost counter that displays the sum of the prices of all the items in the cart.
+
+Use CSS to style the application, making sure that it is easy to use and visually appealing.
