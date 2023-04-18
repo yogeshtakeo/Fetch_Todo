@@ -1,0 +1,17 @@
+.input {
+  width: 50%;
+}
+.search {
+  background-color: Blue;
+  color: White;
+}
+
+.display-box {
+  border: 2px;
+  margin: 10px;
+  padding: 1px;
+}
+body {
+  background-color: lightskyblue;
+  color: white;
+}
