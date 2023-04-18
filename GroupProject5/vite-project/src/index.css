@@ -13,14 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-h1 {
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  border: #213547;
-  color: red;
-  text-decoration: inherit;
-}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -38,6 +31,10 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
 
 button {
   border-radius: 8px;
