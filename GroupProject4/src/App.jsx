@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [price, setPrice] = useState(0);
+  function submit() {
+    setCount(count + 1);
+    setPrice(price + 50);
+  }
+  function click() {
+    setCount(count - 1);
+    setPrice(price - 50);
+  }
+  function reset() {
+    setCount(count * 0);
+    setPrice(price * 0);
+  }
+
+  function addToCart() {
+    setCount(count + 1);
+    setPrice(price + 50);
+  }
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+      <h1>Shopping Cart</h1>
+      <button onClick={submit}>Increment</button>
+      <button onClick={click}>Decrease</button>
+      <button onClick={reset}>reset</button>
+      <p>Number of Items in ShopingCart</p>
+      <h1> {count} </h1>;<p>Total price of Items in $</p>
+      <h1>{price} </h1>;<h2>list of product</h2>
+      <h2>A shopping cart table</h2>
+      <table>
+        <tr>
+          <th>name</th>
+          <th>price</th>
+          <th>description</th>
+        </tr>
+        <tr>
+          <td>Lollipop</td>
+          <td>$50</td>
+          <td>WALMART</td>
+        </tr>
+      </table>
+      <button onClick={addToCart}>AddToCart</button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
