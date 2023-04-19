@@ -1,4 +1,5 @@
-const API_URL = "https://www.reddit.com/r/popular.json";
+  const API_URL = "https://www.reddit.com/r/popular.json";
+
 async function fetchPosts() {
   try {
     const response = await fetch(API_URL);
@@ -9,7 +10,6 @@ async function fetchPosts() {
     return [];
   }
 }
-
 function displayPosts(posts) {
   const container = document.getElementById("posts-container");
   container.innerHTML = "";
@@ -55,7 +55,5 @@ async function init() {
     displayPosts(filteredPosts);
   });
 }
-
 init();
-
   

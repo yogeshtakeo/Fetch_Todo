@@ -1,50 +1,40 @@
+const beerContainer = document.querySelector("#beer-container");
+const beerName = document.querySelector("#beer-name");
+const beerTagline = document.querySelector("#beer-tagline");
+const beerImage = document.querySelector("#beer-image");
+const NewBeerButton = document.querySelector("#newbeer-button");
 
-const todoList = document.getElementById('todo-list');
-const todoForm = document.getElementById('todo-form');
-const todoTitle = document.getElementById('todo-title');
-
-// Function to fetch todos
-async function fetchTodos() {
-  const response = await fetch('hthttps://api.punkapi.com/v2/beers/random');
-  const todos = await response.json();
-  return todos;
-}
-
-// Function to display todos
-function displayTodos(todos) {
-  const todoItems = todos.map(todo => {
-    const li = document.createElement('li');
-    li.textContent = `${todo.title} - ${todo.completed ? 'Completed' : 'Not completed'}`;
-    return li;
-  });
-  
-  todoList.append(...todoItems);
-}
-
-// Function to add new todo
-function addTodo() {
-  const title = todoTitle.value.trim();
-  if (title) {
-    const todo = {
-      userId: 1,
-      title,
-      completed: false
-    };
-    
-    const li = document.createElement('li');
-    li.textContent = `${todo.title} - ${todo.completed ? 'Completed' : 'Not completed'}`;
-    todoList.append(li);
-    
-    // Clear input
-    todoTitle.value = '';
+async function getRandomBeer() {
+  try{
+    const response = await fetch("https://api.punkapi.com/v2/beers/random");
+  const data = await response.json();
+  const beer = data [0];
+  return beer;
   }
+  catch(error) {
+    console.error(error);
+}
 }
 
-// Fetch and display todos on page load
-fetchTodos().then(todos => displayTodos(todos));
+function displayBeer(beer) {
+  beerName.textContent = beer.name;
+  beerTagline.textContent = beer.tagline;
+  beerImage.setAttribute("src", beer.image_url);
+}
 
-// Add new todo on form submit
-todoForm.addEventListener('submit', event => {
-  event.preventDefault();
-  addTodo();
+NewBeerButton.addEventListener("click", async () => {
+  try {
+    const beer = await getRandomBeer();
+    displayBeer(beer); 
+  }
+catch(error) {
+    console.error(error);
+}
 });
+
+getRandomBeer()
+  .then((beer) => {
+    displayBeer(beer);
+    beerContainer.style.visibility = 'visible';
+  })
+  .catch(error => {console.error (error)})
