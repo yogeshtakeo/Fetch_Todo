@@ -6,4 +6,4 @@ Each item in the cart should have buttons to increase or decrease its quantity o
 
 Additionally, add a counter to the application that displays the total number of items in the shopping cart and a total cost counter that displays the sum of the prices of all the items in the cart.
 
-Use CSS to style the application, making sure that it is easy to use and visually appealing.
+Use CSS to style the application, making sure that it is easy to use and visually appealing.np
