@@ -1,0 +1,22 @@
+.form {
+  display: flexbox;
+  background-color: rgb(155, 246, 223);
+  padding: 20px;
+  margin: 5px;
+
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+  color: Black;
+}
+.error {
+  color: red;
+}
+h2 {
+  color: Green;
+}
+.button {
+  background-color: green;
+  color: white;
+}
