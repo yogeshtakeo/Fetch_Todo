@@ -1,54 +1,35 @@
-import React, { useState } from "react";
-import './index.css';
-
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [task, setTask] = useState([]);
-  const [newTask, setNewTask] = useState("");
-
-  function addToList() {
-    if (newTask.trim() !== "") {
-      setTask([...task, newTask.trim()]);
-      setNewTask("");
-    }
-  }
-const markTodo = index => {
-const newTodos = [...todos];
-newTodos[index].isDone = true;
-setTodos(newTodos);
-};
-
-  function removeFromList(index) {
-    const newTasks = [...task];
-    newTasks.splice(index, 1);
-    setTask(newTasks);
-  }
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <h1>To-Do List</h1>
-      <input
-        type="text"
-        name="task"
-        value={newTask}
-        onChange={(event) => setNewTask(event.target.value)}
-      />
-      <button onClick={addToList}>Add</button>
-      <ul>
-        {task.map((item, index) => (
-          <li key={index}>
-            {item}
-            <button onClick={() => removeFromList(index)}>Remove</button>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </div>
   );
 }
 
 export default App;
-
-
-
-
