@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-container {
+  padding: 12px;
+  display: flexbox;
+  float: left;
+  width: 30%;
+  height: 400px;
+  left: 80px;
+  top: 2px;
+  text-align: left;
+  background-color: lightblue;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.text-container {
+  display: grid;
+  float: left;
+  width: 60%;
+  height: 420px;
+  text-align: left;
+}
+.card-container {
+  display: flex;
+  float: right;
+  width: 40%;
+  height: 420px;
+  text-align: center;
+  background-color: lightblue;
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+#root {
+  background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+#navbar {
+  background-color: #fff;
+}
+.image {
+  width: 70%;
+  height: 400px;
+  float: right;
+}
