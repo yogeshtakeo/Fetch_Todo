@@ -1,18 +1,19 @@
-// import React from "react";
-// import Modal from "./modal.tsx";
-import Card from "./card.tsx";
-import Footer from "./footer.tsx";
-import Navbar from "./navbar.tsx";
+import "./App.css";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import Feed from "./feed";
+import Icons from "./icons";
+import Form from "./form";
+
 function App() {
   return (
     <>
       <Navbar />
-      <br></br>
-      <br></br>
-      {/* <Modal /> */}
-      <Card />
+      <Feed />
       <Footer />
+      <Icons />
     </>
   );
 }
+
 export default App;
