@@ -1,0 +1,59 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Classic Chocolate Cake",
+        "category": "Dessert",
+        "ingredients": [
+          "2 cups all-purpose flour",
+          "2 cups granulated sugar",
+          "3/4 cup unsweetened cocoa powder",
+          "2 teaspoons baking powder",
+          "1 1/2 teaspoons baking soda",
+          "1 teaspoon salt",
+          "1 cup milk",
+          "1/2 cup vegetable oil",
+          "2 large eggs",
+          "2 teaspoons vanilla extract",
+          "1 cup boiling water"
+        ],
+        "instructions": [
+          "Preheat oven to 350°F.",
+          "Grease two 9-inch round cake pans.",
+          "In a large mixing bowl, whisk together flour, sugar, cocoa powder, baking powder, baking soda, and salt.",
+          "Add milk, vegetable oil, eggs, and vanilla extract. Beat with an electric mixer on medium speed for 2 minutes.",
+          "Stir in boiling water (the batter will be thin).",
+          "Pour the batter evenly into the prepared pans.",
+          "Bake for 30 to 35 minutes, or until a toothpick inserted into the center of the cakes comes out clean.",
+          "Cool the cakes in the pans for 10 minutes, then remove from pans and cool completely on wire racks.",
+          "Frost the cake with your favorite frosting."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Spaghetti Carbonara",
+        "category": "Entree",
+        "ingredients": [
+          "12 oz spaghetti",
+          "4 oz pancetta or bacon, diced",
+          "4 cloves garlic, minced",
+          "3 large eggs",
+          "1 cup grated Parmesan cheese",
+          "1/2 cup grated Pecorino Romano cheese",
+          "Salt and black pepper to taste"
+        ],
+        "instructions": [
+          "Cook spaghetti in a large pot of salted boiling water until al dente.",
+          "While the pasta is cooking, cook pancetta or bacon in a large skillet over medium heat until crispy.",
+          "Add garlic to the skillet and cook for 1-2 minutes until fragrant.",
+          "In a bowl, whisk together eggs, Parmesan cheese, and Pecorino Romano cheese.",
+          "Drain the pasta and reserve 1 cup of the pasta water.",
+          "Add the pasta to the skillet with the pancetta and garlic, and toss to combine.",
+          "Remove the skillet from the heat and add the egg mixture, tossing quickly to coat the pasta (the heat from the pasta will cook the eggs).",
+          "If the pasta seems too dry, add a little of the reserved pasta water to moisten it.",
+          "Season with salt and black pepper to taste, and serve immediately."
+        ]
+      }
+    ]
+  }
+  
