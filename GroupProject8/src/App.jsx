@@ -14,7 +14,7 @@ function App() {
       <NavbarComponent />
       <div className="flex">
         <SidebarComponent />
-        <div className="Flex m-4 flex-wrap gap-12">
+        <div className="grid grid-cols-3 gap-12 ">
           {recipes.map((recipe, index) => (
             <CardComponent key={index} recipe={recipe} />
           ))}

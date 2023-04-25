@@ -12,7 +12,7 @@ import {
 
 const SidebarComponent = () => {
   return (
-    <div className="w-fit">
+    <div className="w-fit display:flex flex-wrap:wrap ">
       <Sidebar aria-label="Default sidebar example">
         <Sidebar.Items>
           <Sidebar.ItemGroup>
