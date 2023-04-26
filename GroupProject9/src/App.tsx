@@ -2,7 +2,6 @@ import "./App.css";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Feed from "./feed";
-import Form from "./form";
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
       <Navbar />
       <Feed />
       <Footer />
-      <Form />
     </>
   );
 }
